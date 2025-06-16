@@ -65,3 +65,9 @@ As soon as Jaeger find out a trace on OpenTelemetry Collector it will be availab
 ![image](https://github.com/intersystems-ib/iris-opentelemetry/blob/main/images/jaeger-otel.png).
 
 By default, a Service is created with the name *irisotel* when a trace from IRIS is found in OpenTelemetry Collector.
+
+# IRIS configuration
+To enable IRIS notifications to OpenTelemetry Collector we have to enable it from *Monitor Settings* configuration:
+![image](https://github.com/intersystems-ib/iris-opentelemetry/blob/main/images/iris-configuration.png).
+
+For our example we are going to enable OTel Metrics to report the IRIS metrics to the collector and OTel Logs...but we are not going to use it. We have configured OTel Exporter Interval to 10 seconds, so each 10 seconds we are going to send our metrics into OpenTelemetry Collector.
