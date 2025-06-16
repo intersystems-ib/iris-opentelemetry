@@ -59,7 +59,7 @@ Prometheus docker image provide a web interface accessible from this [url](http:
 Jaeger is an Open Source software to monitorize traces from your solutions. As Prometheus, Jaeger has a web interface published [here](http://localhost:16686/search).
 
 In our example we are going to use the method *TestTraces()* from SYS.Monitor.OTel class (more info [here](https://docs.intersystems.com/iris20251/csp/docbook/DocBook.UI.Page.cls?KEY=AOTEL#AOTEL_errors)). To execute this method you only have to open a terminal season from your Visual Studio Code (if your local project un VSCode is connected to the IRIS Server in Docker)
-![image](https://github.com/intersystems-ib/iris-opentelemetry/blob/main/images/prometheus-result.png).
+![image](https://github.com/intersystems-ib/iris-opentelemetry/blob/main/images/test-traces.png).
 
 As soon as Jaeger find out a trace on OpenTelemetry Collect it will be available for consultancy from the web interface:
 ![image](https://github.com/intersystems-ib/iris-opentelemetry/blob/main/images/jaeger-otel.png).
